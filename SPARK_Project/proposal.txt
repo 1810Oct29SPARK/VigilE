@@ -1,0 +1,28 @@
+Proposal:
+
+Lightseekers TCG Site
+
+One of my favorite games is Magic: The Gathering. It's been around for a long time and it has a lot of resources for its players. 
+I heard of a new game called Lightseekers that came out some time in the last year. Since it's realtively new, I wanted to see if
+I could build a site similar to the ones for Magic that could act as a resource for Lightseekers' players.
+
+
+Create an Account
+How To Play the Game 
+Search for Cards
+Build A Deck
+Forum 
+Links to Purchase Products
+
+OR 
+
+Esperanto Site
+
+Create An Account
+History of the Language
+Lessons
+Dictionary
+Forum
+Pasporta Servo
+
+I have more information for this site, but I'm not sure what APIs (if any) there are. 
