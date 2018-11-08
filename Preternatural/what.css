@@ -1,0 +1,40 @@
+.navbar {
+    height: 50px;
+    background-color: gray;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+/* This make all of the lis inside of the navbar orient to the left, vertically centered and they appear right next to each other. */
+.navbar ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+}
+
+/* This class makes all of the navbar elements distribute evenly */
+.navbar li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+    font-weight: bold;
+    margin: 0;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: black;
+}
+
+#navcenter {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
