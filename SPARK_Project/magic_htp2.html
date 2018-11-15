@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MTG: Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="magic2.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-ML9h/UCooefre72ZPxxOHyjbrLT1xKV0AHON1J+OlOV2iwcYemqmWyMfTcfyzLJ1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <br>
+            <h1> How To Play Magic </h1>
+            <br>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="magic_site2.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active" >
+                      <a class="nav-link" href="magic_htp2.html"> How To Play </a>
+                      <ul> 
+                          <li class="nav-item"> <a class="nav-link" href="#"> Structure of a Turn </a> </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="magic_cardsearch2.html"> Card Search</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Deckbuilder </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+    </header>
+   <section>
+       <hr>
+       <h2> How To Read A Magic Card </h2>
+       <article>
+           <p>
+            Magic Cards have 5 parts to them: Name, Mana Cost, Type, Expansion Symbol, Text Box. 
+            Creatures have an additional part to them: Power/Toughness. All of these parts 
+            will be in the same place on every card.
+           </p>
+           <br>
+           <div id ="grizzly">
+                <img src="https://img.scryfall.com/cards/normal/en/10e/268.jpg?1517813031"> 
+           </div>
+           <br>
+           <br>
+           <h3> Name </h3>
+            <p>
+                Each card has a unique name. In most of Magic's formats, you may have 
+                up to four copies of a card in your deck (except for basic lands). 
+            </p>
+            <hr>
+            <br>
+            <h3> Mana Cost </h3> 
+            <p>
+                Mana is the resource used to cast spells in Magic. Every spell has a 
+                mana cost which can be found in the upper right-hand corner of the card. 
+                Grizzly Bears has a mana cost of 
+                <img src="1_mana.png" class ="mana"> 
+                <img src="green_mana.png" class ="mana">. This means that you must pay two mana: one mana of any color and one green mana. 
+            </p>
+            <hr>
+            <br> 
+            <h3> Type Line </h3>
+            <p>
+                Each card in Magic has a Type which can be found below the artwork on the card. 
+                On this line you may also find Supertypes and Subtypes which give a bit more 
+                information about the card.
+            </p>
+            <p>
+                There are 7 different types of cards in Magic. Lands, Creatures, Instants, Sorceries, Enchantments, Artifacts, and Planeswalkers. 
+                The next few sections will describe how each of these types of cards work.  
+            </p>
+                <br>
+            <h4> Lands</h4>
+        
+            Lands are the foundation of your deck. They give you the mana you need to cast the other cards in your deck. You can put one land from your hand onto the battlefield during each of your turns. 
+            There are 5 types of basic lands which represent the colors of Magic: Plains (white), Island (blue), Swamp (black), Mountain (red), and Forest (green). Not all lands are basic lands. Some may tap for multiple colors or tap for colorless mana, but give special abilities.  <br>
+            <br>
+            <div id = "lands"> 
+                <img class = "basic" src = "https://img.scryfall.com/cards/large/en/c18/295.jpg?1535506064">
+                <img class = "basic" src = "https://img.scryfall.com/cards/large/en/c18/298.jpg?1535506107"> 
+                <img class = "basic" src = "https://img.scryfall.com/cards/large/en/c18/301.jpg?1535506151">
+                <img class = "basic" src = "https://img.scryfall.com/cards/large/en/c18/302.jpg?1535506164">
+                <img class = "basic" src = "https://img.scryfall.com/cards/large/en/c18/307.jpg?1535506237">
+            </div> 
+            <hr>
+            <br>
+            <br>
+            <h4> Creatures </h4>
+            <p> 
+                Creatures are cards that represent your minions. Creatures are useful for attacking your opponents and defending yourself from your opponent's attacks. You can only cast creature spells during your main phase. Each creature has a power and toughness which affect how well it will do in combat.  </p>
+                <img src="https://img.scryfall.com/cards/normal/en/ima/78.jpg?1530592007">
+            </p> 
+            <br>
+            <p>
+                Some creatures also have abilities. There are three types of abilities. 
+            </p>
+            <hr>
+                <h5> Static Abilities </h5>
+                <p> Abilities that will always be in effect until the creature is destroyed or exiled.<br>
+                    Examples of this are keyword abilities like Vigilance and Herald of Dromoka's "Other Warrior creatures you control have Vigilance".  </p>
+                <img src="https://img.scryfall.com/cards/normal/en/dtk/22.jpg?1517813031">
+                <br>
+                <br>
+                <br>
+                <h5> Triggered abilities </h5>
+                <p> 
+                    Triggered Abilities start with "When," "Whenever," or "At," and will only trigger when a specific condition is met. 
+                </p>
+                <img src="https://img.scryfall.com/cards/normal/en/c16/119.jpg?1530716039">
+                <br>
+                <br>
+                <h5> Activated Abilities </h5>
+                <p> These are abilities that will only be in effect when you activate it. <br>
+                    They are in the form of Cost: Effect
+                </p>
+            
+            <br>
+            <h4> Instants & Sorceries </h4>
+            <p>               
+                Instants and Sorceries are single-use spells that have a variety of effects such as destroying creatures, drawing additional cards, making your creatures stronger, etc. <br> 
+                When an Instant or Sorcery spell is cast, you do what it says on the card and then put it into your graveyard. The difference between Instants and Sorceries is that Instants can be cast at any time (even during and opponent's turn), 
+                while Sorceries can only be cast during a main phase on your turn. <br> <br>
+                <img src="https://img.scryfall.com/cards/large/en/a25/141.jpg?1521727517">
+                <img src="https://img.scryfall.com/cards/large/en/m19/51.jpg?1531451266">
+            </p>
+            <br>
+            <h4> Artifacts </h4>
+            <p> 
+                Artifacts are cards that represent machines and magical talismans. Most artifacts are colorless, which means that they can be cast with any color of mana. Like Creatures and Lands, artifacts can only be cast during your main phase and will only leave the battlefield when removed by another effect.  
+            </p>
+            <br>
+            <h4> Enchantments </h4>
+            <p>
+                Enchantments are persistant manifestations of magic that have a variety of effects. 
+                Some Enchantments are called Auras. Auras are enchantments that can be attached 
+                to a creature to give bonuses or hinder a creature. 
+                <br>
+                <br>
+                <img id="ajani" src="https://img.scryfall.com/cards/normal/en/m19/6.jpg?1531450685">
+                <img id = "pacifism" src="https://img.scryfall.com/cards/large/en/bbd/101.jpg?1529061872">
+            </p>
+            <br> 
+            <h4> Planeswalkers </h4>
+            <p>
+                Planeswalkers are powerful allies that you can summon to assist you. Each Planeswalker has a specific number 
+                of loyalty counters on it and three abilities that it can potentially use. These abilities add or subtract 
+                loyalty counters from the Planeswalker to have an effect and only one ability can be used each turn. <br> 
+                If a Planeswalker ever has 0 Loyalty Counters, it is destroyed and goes to the graveyard.<br>
+                <br>
+                <img src="https://img.scryfall.com/cards/large/en/m19/301.jpg?1531452081">
+            </p>
+            <br>
+            <h3> Expansion Symbol </h3>
+            <p>
+                The expansion symbol doesn't affect gameplay, but it lets you know which set the card came from and its rarity. 
+            </p>
+            <br>
+            <h3> Text Box </h3>
+            <p> The text box lets you know some information about the card. If applicable you will find that any special 
+                abilities a card has will be listed in text box. It will also include any flavor text which gives 
+                some insight into Magic's lore, but has no effect on gameplay. 
+            </p>
+            <br>
+            <h3> Power/Toughness</h3> 
+            <p>
+                Every creature in Magic has a power and a toughness which can be found in the box on the lower right-hand corner of the card.
+                Its power (which is the number before the slash) tells you how much damage a creature deals during combat and its toughness (the number after the slash) tells you how much damage the creature must be dealt in a single turn to destroy it.
+            </p>         
+       </article>
+    </section>
+    <section>
+       <br>
+       <article>
+            <h2> On Your Turn </h2>
+            <br> 
+            <h3> Untap </h3>
+            <p> During the step, you untap (reset) all permanents that you control.</p>
+            <br>
+            <h3> Upkeep </h3>
+            <p> 
+                Any abilities that trigger "at the beginning of your upkeep" will trigger. <br> 
+                Any abilities your opponent(s) have that trigger "at the beginning of each upkeep" will also trigger.
+            </p>
+            <br>
+            <img src="https://img.scryfall.com/cards/normal/en/mm3/149.jpg?1517813031">
+            <img src="https://img.scryfall.com/cards/normal/en/soi/21a.jpg?1518205118">
+            <img src="https://img.scryfall.com/cards/normal/en/shm/139.jpg?1517813031">
+            <br>
+            <br>
+            <br>
+            <h3> Draw </h3>
+            <p>
+                Draw a card. 
+            </p>
+            <br>
+            <h3> Main Phase </h3>
+            <p> 
+                During your main phase, you can play a land and cast spells if you have the mana to pay for them. 
+            </p>
+            <br>
+            <h3> Combat Phase </h3>
+            <br>
+                <h4> Beginning of Combat </h4>
+                <p> 
+                    Any abilities that trigger "at the beginning of combat on your turn," will trigger. <br>
+                    Any abilities your opponent(s) have effects that trigger "at the beginning of each combat," will also trigger.
+                </p>
+                <img src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=452841&type=card">
+                <br>
+                <br>
+                <h4> Declare Attackers </h4>
+                <p>
+                    During the Declare Attackers step, you let your opponent(s) know which of your creatures will attack and who they will attack. 
+                    A creature can only attack a player or planeswalker, not individual creatures. You may also decide not to attack with any creatures. 
+                </p>
+                <h4> Declare Blockers </h4>
+                <p>
+                    During this step, your opponent(s) will decide which of your attackers to block. 
+                    Each creature can only block one attacker. They may decide to not block any attackers. 
+                </p>
+                <h4> Combat Damage </h4>
+                <p>
+                    During this step, each attacking and blocking creature deals damage to the other equal to its power. 
+                    If they are dealt damage greater than or equal to their toughness, they will be put in the graveyard.
+                    Any creature that wasn't blocked deals damage equal to its power to the player it's attacking and that player loses that much life.
+                </p>
+                <h4> End of Combat </h4>
+                <p>
+                    If you have any permanents with abilities that trigger "at the end of combat on your turn", this is when the effect will trigger. <br>
+                    If an opponent has permanents with abilities that trigger "at the beginning of each combat," the effect will also trigger. 
+                </p>
+                <br> 
+                <img src="https://img.scryfall.com/cards/large/en/ori/23a.jpg?1518205331">
+                <img src="https://img.scryfall.com/cards/normal/en/bok/39.jpg?1517813031">
+                <br> 
+                <br>
+                <h3> Main Phase </h3>
+                <p> Just like the Main Phase before combat, you may play a land (if you haven't done so already) 
+                    and you may cast spells if you have the mana to pay for them. 
+                </p>
+                <h3> End of Turn</h3>
+                <p>
+                    At the end of turn, there are a couple of things that happen:
+                    <ul>
+                        <li> All effects that happen "at the beginning of the end step" will happen.</li>
+                        <li> All surviving creatures are "healed" back to full toughness. </li>
+                        <li> All effects that last "until end of turn" wear off. </li>
+                        <li> If you have more than 7 cards in your hand, discard until you have 7 cards. </li>
+                    </ul> 
+                </p>
+                <br>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h2> Game Zones </h2>
+            <br>
+            <h3> Hand </h3>
+            <br>
+            <p> The cards that you have access to. At the beginning of a game of Magic, you draw 7 cards. </p>
+            <br> 
+            <h3> Library </h3>
+            <br>
+            <p> The deck of Magic cards that you play with is known as your library. </p>
+            <br>
+            <h3> Battlefield </h3>
+            <br> 
+            <p>
+                The battlefield is a zone that you and your opponent(s) share. 
+                The cards that are placed on the battlefield are known as permanents.
+                Instants and Sorceries are never on the battlefield.  
+            </p>
+            <br>
+            <h3> Graveyard </h3>
+            <br>
+            <p>
+                Each player has a graveyard. It's the place where permanents go when they are destroyed 
+                and where you will discard cards. The cards in your graveyard should always be face-up. 
+                Any player may look at any graveyard at any time.  
+            </p>
+            <br>
+            <h3> Exile </h3>
+            <br>
+            <p>
+                When a card is exiled, it is placed outside the game. 
+                It has a similar function to the graveyard, but cards that are exiled usually can't be brought back to the game (there are a few exceptions). 
+            </p>
+        </article> 
+    </section>   
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="magic.js"></script>
+
+   
+</body>
+</html>

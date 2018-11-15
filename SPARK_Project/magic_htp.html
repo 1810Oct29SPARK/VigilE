@@ -3,22 +3,156 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>How To Play</title>
+    <title>MTG: Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="magic2.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-ML9h/UCooefre72ZPxxOHyjbrLT1xKV0AHON1J+OlOV2iwcYemqmWyMfTcfyzLJ1" crossorigin="anonymous">
 </head>
 <body>
-        <nav> 
-                <ul>
-                    <li> <a> Home </a> </li>
-                    <li> <a> How To Play </a> </li>
-                    <li> <a> Card Search </a> </li>
-                    <li> <a> Deckbuilder </a> </li>
-                    <li> <a> Forum </a></li>
-                    <li> <a> News </a> </li>
-                    <li> <a> Spoilers </a> </li>
-                </ul>
-            </nav>
+    <header>
+        <br>
+            <h1> Home Page</h1>
+            <br>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> How To Play </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Card Search</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Deckbuilder </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+    </header>
+   <section>
+       <h2> About The Game </h2>
+       <article>
+           <p>
+               Magic: The Gathering is a trading card game that was created in 1993 by a man named Richard Garfield. 
+               It has the unique distinction of being the first trading card game (TCG) ever created. As of 2015, Magic has roughly 
+               12 million players world-wide. It can be played by two or more players in many different formats which fall into two categories: 
+               Constructed and Limited.  
+           </p>
+       </article>
+       <br> 
+       <h2> Objective </h2>
+       <article>
+           <p>
+                The goal of Magic: The Gathering is to be the last player standing. 
+                This can be accomplished in a variety of ways, but the most common 
+                way is to reduce your opponent's life from 20 down to 0. 
+           </p>
+           <br>
+       </article>
+   </section>
+   <section>
+       <h2> How To Read A Magic Card </h2>
+       <article>
+           <p>
+            Magic Cards have 5 parts to them: Name, Mana Cost, Type, Expansion Symbol, Text Box. 
+            Creatures have an additional part to them: Power/Toughness. All of these parts 
+            will be in the same place on every card.
+           </p>
+           <br>
+           <div id ="grizzly">
+                <img src="https://img.scryfall.com/cards/normal/en/10e/268.jpg?1517813031"> 
+           </div>
+           <h3> Name </h3>
+            <p>
+                Each card has a unique name. In most of Magic's formats, you may have 
+                up to four copies of a card in your deck (except for basic lands). 
+            </p>
+            <br>
+            <h3> Mana Cost </h3> 
+            <p>
+                Mana is the resource used to cast spells in Magic. Every spell has a 
+                mana cost which can be found in the upper right-hand corner of the card. 
+                Grizzly Bears has a mana cost of 
+                <img src="1_mana.png" class ="mana"> 
+                <img src="green_mana.png" class ="mana">. This means that you must pay two mana: one mana of any color and one green mana. 
+            </p>
+            <br> 
+            <h3> Type </h3>
+            <p>
+                Each card in Magic has a Type which can be found below the artwork on the card. 
+                On this line you may also find Supertypes and Subtypes which give a bit more 
+                information about the card.
+            </p>
+            <p>
+                There are 7 different types of cards in Magic. Lands, Creatures, Instants, Sorceries, Enchantments, Artifacts, and Planeswalkers. The next few sections will describe how each of these types of cards work.  
+                <br>
+                <h4> Lands</h4>
+        
+                Lands are the foundation of your deck. They give you the mana you need to cast the other cards in your deck. You can put one land from your hand onto the battlefield during each of your turns. 
+                There are 5 types of basic lands which represent the colors of Magic: Plains (white), Island (blue), Swamp (black), Mountain (red), and Forest (green). Not all lands are basic lands. Some may tap for multiple colors or tap for colorless mana, but give special abilities.  <br>
+                <br>
+                <div id = "lands"> 
+                    <img class = "basic" src = "https://img.scryfall.com/cards/large/en/c18/295.jpg?1535506064">
+                    <img class = "basic" src = "https://img.scryfall.com/cards/large/en/c18/298.jpg?1535506107"> 
+                    <img class = "basic" src = "https://img.scryfall.com/cards/large/en/c18/301.jpg?1535506151">
+                    <img class = "basic" src = "https://img.scryfall.com/cards/large/en/c18/302.jpg?1535506164">
+                    <img class = "basic" src = "https://img.scryfall.com/cards/large/en/c18/307.jpg?1535506237">
+                </div> 
+                <br>
+                <br>
+                <h4> Creatures </h4>
+                <p> Creatures are cards that represent your minions. Creatures are useful for attacking your opponents and defending yourself from your opponent's attacks. You can only cast creature spells during your main phase. Each creature has a power and toughness which affect how well it will do in combat.  </p>
+                     <img src="https://img.scryfall.com/cards/normal/en/ima/78.jpg?1530592007">
+                    <br>
+                </p> 
+                <h4> Instants & Sorceries </h4>
+                <p>               
+                    Instants and Sorceries are single-use spells that have a variety of effects such as destroying creatures, drawing additional cards, making your creatures stronger, etc. <br> 
+                    When an Instant or Sorcery spell is cast, you do what it says on the card and then put it into your graveyard. The difference between Instants and Sorceries is that Instants can be cast at any time (even during and opponent's turn), 
+                    while Sorceries can only be cast during a main phase on your turn. <br>
+                    <img src="https://img.scryfall.com/cards/large/en/a25/141.jpg?1521727517">
+                    <img src="https://img.scryfall.com/cards/large/en/m19/51.jpg?1531451266">
+                </p>
+                <br>
+                <h4> Artifacts </h4>
+                <p> 
+                    Artifacts are cards that represent machines and magical talismans. Most artifacts are colorless, which means that they can be cast with any color of mana. Like Creatures and Lands, artifacts can only be cast during your main phase and will only leave the battlefield when removed by another effect.  
+                </p>
+                <br>
+                <h4> Enchantments </h4>
+                <p>
+                    Enchantments are persistant manifestations of magic that have a variety of effects. 
+                    Some Enchantments are called Auras. Auras are enchantments that can be attached 
+                    to a creature to give bonuses or hinder a creature. 
+                    <br>
+                    <br>
+                    <img id="ajani" src="https://img.scryfall.com/cards/normal/en/m19/6.jpg?1531450685">
+                    <img id = "pacifism" src="https://img.scryfall.com/cards/large/en/bbd/101.jpg?1529061872">
+                </p>
+                <br> 
+                <h4> Planeswalkers </h4>
+                <p>
+                    Planeswalkers are powerful allies that you can summon to assist you. Each Planeswalker has a specific number 
+                    of loyalty counters on it and three abilities that it can potentially use. These abilities add or subtract 
+                    loyalty counters from the Planeswalker to have an effect and only one ability can be used each turn. <br>
+                    <br>
+                    <img src="https://img.scryfall.com/cards/large/en/m19/301.jpg?1531452081">
+                </p>
+            </p>
+       </article>
+       <br>
+       <article>
+
+        </article>
+        <article>
+
+        </article>     
+   </section>
 </body>
 </html>
