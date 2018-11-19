@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+
 h1 {
     margin-left: auto;
     margin-right: auto;
@@ -59,4 +68,177 @@ img {
     text-align: center;
     height: 400px;
     width: auto;
+}
+
+
+.searchField {
+    width: 15%;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.searchInput {
+    visibility: hidden;
+}
+
+/* Deckbuilder: Where the card search displays */ 
+#deck-build-search {
+    width: 25%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: relative;
+}
+
+/* Deckbuilder: Where the deck displays */
+#deck-build-view {
+    width: 100%;
+    border: 1px solid black;
+    display: inline-block;
+    float: right;
+    position: absolute;
+}
+
+/* Deckbuilder: All of the search parameters */
+.form-group {
+    display: block;
+    margin: 0;
+}
+
+/* Deckbuilder: Name, Text, Type */
+.form-control-sm {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+/* Deckbuilder: Box that display image of search*/ 
+#searchCardImg {
+    text-align: center;
+    min-width: 250px;
+    min-height: 300px;
+    padding: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    border: 2px solid black;
+    margin-bottom: 0;
+}
+
+/* Deckbuilder search image */
+#searchCardImg img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Deckbuilder: divs that hold the card images for the deck */
+.deckCard {
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+/* Deckbuilder: card images themselves */ 
+.deckCard img {
+    height: 300px;
+    width: 225px;
+}
+
+/* Deckbuilder quantity of each card */ 
+.cardAmount  {
+    height: 36px;
+    width: 36px;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 1px;
+
+
+}
+
+.cardAmount p {
+    color: black;
+}
+
+/* Deckbuilder: Lands, CMC: 1, CMC: 2 */ 
+.cardType {
+    padding: 10px;
+    
+}
+
+/* Deckbuilder: Div that contains DECK (deckAmount) pictures of mana symbols */
+#deckTrack {
+    padding-left: 10px;
+}
+
+/* Deckbuilder: formats the mana symbol images */ 
+#deckTrack img {
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+}
+
+/* Tracks how many cards are in the deck */
+#deckamount {
+    display: inline-flex;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#form-view {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 50%;
+}
+
+#form-view label {
+    color:black;
+}
+
+hr {
+    color: black;
+}
+
+#searchSubmit {
+    text-align: center;
+} 
+button{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+}
+
+.mana {
+    height: 20px;
+    width: 20px;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+#colorChecks {
+    display: flex;
+}
+
+#cmdColorId {
+    display: flex;
+}
+
+.colorChecks {
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: center;
+}
+
+.manaSyms {
+    display: inline-block;
+    vertical-align: center;
+    padding: 0;
 }
