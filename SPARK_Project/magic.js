@@ -189,7 +189,9 @@ function buildSearchMagicApi() {
 
         }
 
-
+        console.log("cards [0]: " + cards[0].image_uris.normal);
+        document.getElementById("searchCardImg").src = cards[0].image_uris.normal;
+        
 
         
         
