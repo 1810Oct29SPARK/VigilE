@@ -1,5 +1,5 @@
 // weather API
-/* 
+
 let tampaWeather = ();
 
 // send a GET request to this endpoint to get Tampa weather
