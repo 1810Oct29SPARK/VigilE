@@ -75,45 +75,24 @@ function searchMagicApi() {
 
         fetch (magicApiSearchUrl + searchTerms)
         /*'?q=' + inputcardName + "+oracle%3A" + inputText + "+type%3A" + inputCardType + "+color%3D" + inputColors + "+commander%3D" + inputCommander + "+mana%3A" + inputManaSymbols + "+cmc%3D" + inputCMC + "+legal%3A" + inputLegal + "+pow%3D" + inputPower + "+tou%3D" + inputTough) */
-    .then(function(response) {
-    return response.json();
-    })
-    .then(function(myJson) {
-        let cards = myJson.data;
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(myJson) {
+            let cards = myJson.data;
         //let output = " ";
         
-        console.log(cards);
+            console.log(cards);
 
-        for (i = 0; i < cards.length; i++) {
-            if (cards[i].image_uris){
-            console.log(cards[i].image_uris.normal);
-            }
-            else {
+            for (i = 0; i < cards.length; i++) {
+                if (cards[i].image_uris){
+                console.log(cards[i].image_uris.normal);
+                }
+                else {
                 console.log("Image Not Found");
-            }
-
-        }
-
-        
-        
-
-        /*
-        $.each (cards, (index, card) => {
-            console.log(card.image_uris.normal);
-            output += `
-            <div class="row">
-                <div class="col-md-4"> 
-                <img src="" class="thumbnail">
-                </div>
-            </div>
-        `;
-       */
-            
-    });
-    /*
-        $("#cards").html(output);
-    });
-     */
+                }
+            }      
+        });
 };
 
 $('#searchSubmit').click(function () {

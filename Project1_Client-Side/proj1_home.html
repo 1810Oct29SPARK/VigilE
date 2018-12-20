@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project1 Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="proj1.css">
+    <script src="proj1.js"></script>
+</head>
+
+<body>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">FakeCo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proj1_schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proj1_requests.html">Requests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proj1_accounts.html">Account</a>
+                </li>
+            </ul>
+
+            <h4 id="view-indicator"> Employee View </h4>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="blurb">
+        <h2> Welcome to the Employee Homepage! </h2>
+        <p> On this page you can quickly check important information including your next shift and number of pending
+            requests. </p>
+        <br>
+        <br>
+        <div class="container">
+            <hr>
+            <h4> Next Shift </h4>
+            <p> Your next shift is on <br>
+                <div id="calendar">
+                    <p id="calendar-day"></p>
+                    <p id="calendar-date"></p>
+                    <p id="calendar-month-year"></p>
+                </div>
+                <br>
+                from
+                <br> <br>
+                <div id="shift">
+                    <p id="shift-time"></p>
+                </div> <br>
+                To see your full schedule, <a href="proj1_schedule.html"> click here </a>
+            </p>
+            <hr>
+        </div>
+        <div class="container">
+            <br>
+            <br>
+            <h4> Number of Pending Requests </h4>
+            <div id = "request-div"> 
+                <p> You have <span id="request-count"> </span> pending requests. 
+            </div>
+            To see all requests, <a href="proj1_requests.html"> click here </a>
+            </p>
+        </div>
+
+
+
+</body>
+
+</html>
