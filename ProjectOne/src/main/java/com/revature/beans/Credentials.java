@@ -1,22 +1,14 @@
-package com.revature.model;
+package com.revature.beans;
 
 public class Credentials {
-	
-	public Credentials() {
-		super();
-		
-	}
+
 	public Credentials(String username, String password) {
 		super();
 		this.username = username;
 		this.password = password;
 	}
-	
-	
-	
 	private String username;
 	private String password;
-	
 	public String getUsername() {
 		return username;
 	}
@@ -62,5 +54,4 @@ public class Credentials {
 			return false;
 		return true;
 	}
-	
 }

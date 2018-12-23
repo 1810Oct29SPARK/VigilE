@@ -1,32 +1,29 @@
 package com.revature.beans;
 
-import java.util.Arrays;
-
 public class Reimbursement {
 
-	public Reimbursement(int r_id, double amount, String description, byte[] image, int e_id, String status,
-			String resolver) {
+
+	public Reimbursement(int reimb_id, double amount, String description, Employee employee_id, Status stat,
+			Employee reimb_resolver) {
 		super();
-		this.r_id = r_id;
+		this.reimb_id = reimb_id;
 		this.amount = amount;
 		this.description = description;
-		this.image = image;
-		this.e_id = e_id;
-		this.status = status;
-		this.resolver = resolver;
+		this.employee_id = employee_id;
+		this.stat = stat;
+		this.reimb_resolver = reimb_resolver;
 	}
-	private int r_id;
+	private int reimb_id;
 	private double amount;
 	private String description;
-	private byte[] image;
-	private int e_id;
-	private String status;
-	private String resolver;
-	public int getR_id() {
-		return r_id;
+	private Employee employee_id;
+	private Status stat;
+	private Employee reimb_resolver;
+	public int getReimb_id() {
+		return reimb_id;
 	}
-	public void setR_id(int r_id) {
-		this.r_id = r_id;
+	public void setReimb_id(int reimb_id) {
+		this.reimb_id = reimb_id;
 	}
 	public double getAmount() {
 		return amount;
@@ -40,35 +37,33 @@ public class Reimbursement {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public byte[] getImage() {
-		return image;
+	public Employee getEmployee_id() {
+		return employee_id;
 	}
-	public void setImage(byte[] image) {
-		this.image = image;
+	public void setEmployee_id(Employee employee_id) {
+		this.employee_id = employee_id;
 	}
-	public int getE_id() {
-		return e_id;
+	public Status getStat() {
+		return stat;
 	}
-	public void setE_id(int e_id) {
-		this.e_id = e_id;
+	public void setStat(Status stat) {
+		this.stat = stat;
 	}
-	public String getStatus() {
-		return status;
+	public Employee getReimb_resolver() {
+		return reimb_resolver;
 	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	public String getResolver() {
-		return resolver;
-	}
-	public void setResolver(String resolver) {
-		this.resolver = resolver;
+	public void setReimb_resolver(Employee reimb_resolver) {
+		this.reimb_resolver = reimb_resolver;
 	}
 	@Override
 	public String toString() {
-		return "Reimbursement [r_id=" + r_id + ", amount=" + amount + ", description=" + description + ", image="
-				+ Arrays.toString(image) + ", e_id=" + e_id + ", status=" + status + ", resolver=" + resolver + "]";
+		return "Reimbursement [reimb_id=" + reimb_id + ", amount=" + amount + ", description=" + description
+				+ ", employee_id=" + employee_id + ", stat=" + stat + ", reimb_resolver=" + reimb_resolver + "]";
 	}
+	
+	
+	
+
 	
 	
 	

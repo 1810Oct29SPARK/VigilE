@@ -1,0 +1,19 @@
+
+.blurb {
+    text-align: center;
+}
+
+.container {
+    background-color: lightgray;
+}
+
+#Reimb_Desc {
+    width: 50%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+	text-align: center;
+}

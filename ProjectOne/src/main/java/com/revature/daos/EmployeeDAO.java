@@ -13,8 +13,9 @@ public interface EmployeeDAO {
 	public Employee getEmployeeById(int id);
 	
 	// update employee info
-	public Employee updateEmployeeInfo();
+	public Employee updateEmployeeInfo(int id, String password);
 	
+	public Employee getEmployeeCreds(String username, String password);
 	
 	 
 

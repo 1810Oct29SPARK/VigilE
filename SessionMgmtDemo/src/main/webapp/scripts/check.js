@@ -11,14 +11,14 @@ window.onload = function() {
 function populateUser() {
 	// send a GET request to localhost:7001/SessionMgmtDemo/session
 	// localhost:7001 = hostname and port
-	// SessionMgmtDemo = root path
-	fetch("http://localhost:7001/SessionMgmtDemo/session").then(function(response) {
+	// SessionMgmtDemo = route path
+	fetch("http://localhost:7001/ProjectOne/session").then(function(response) {
 		return response.json();
 	}).then (function(data) {
 		// check whether there was a valid session returned
 		// define behavior for no user returned
 		if (data.session === null) {
-			window.location = "http://localhost:7001/SessionMgmtDemo/login";
+			window.location = "http://localhost:7001/ProjectOne/login";
 		} else {
 			// define behavior for user returned
 			user = data;
@@ -28,9 +28,5 @@ function populateUser() {
 			document.getElementById("email").innerText = "Email: " + user.email;
 		}
 	});
-	
-	
-	
-	
 	
 }
