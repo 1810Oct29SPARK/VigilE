@@ -100,7 +100,7 @@ local.properties
 Servers/
 */target/
 .DS_Store
-.properties
+*.properties
 # Created by https://www.gitignore.io/api/angular
 # Edit at https://www.gitignore.io/?templates=angular
 
