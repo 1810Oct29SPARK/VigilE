@@ -50,6 +50,18 @@ function populateUser() {
     });
 }
 
+
+//async function getJson() {
+//	  try {
+//	    let response = await fetch('/users.json');
+//	    let json = await response.json();
+//	    console.log(json);
+//	  }
+//	  catch(e) {
+//	    console.log('Error!', e);
+//	  }
+//	}
+
 function populateExistingRequests() {
 	let result = "";
 	fetch ("http://localhost:7001/ProjectOne/reimbursements").then(function(response) {

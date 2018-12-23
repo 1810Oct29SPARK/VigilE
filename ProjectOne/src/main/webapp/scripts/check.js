@@ -1,14 +1,10 @@
 let user = {};
 var output = "";
 
-window.onload = function() {
-	populateUser();
-}
-
 function populateUser() {
-	// send a GET request to localhost:7001/SessionMgmtDemo/session
+	// send a GET request to localhost:7001/ProjectOne/session
 	// localhost:7001 = hostname and port
-	// SessionMgmtDemo = route path
+	// ProjectOne = route path
 	fetch("http://localhost:7001/ProjectOne/session").then(function(response) {
 		return response.json();
 	}).then (function(data) {
@@ -38,3 +34,10 @@ function populateUser() {
 		}
     });
 }
+
+window.onload = function() {
+	populateUser();
+}
+	let view_indicator = document.getElementById("view-indicator");
+	let request_count = document.getElementById("request-count");
+
