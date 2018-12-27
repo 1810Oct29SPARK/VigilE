@@ -63,7 +63,7 @@ function populateUser() {
 //	}
 
 function populateExistingRequests() {
-	let result = "";
+	result = "";
 	fetch ("http://localhost:7001/ProjectOne/reimbursements").then(function(response) {
 		return response.json();
 	}).then(function(data) {
@@ -75,29 +75,31 @@ function populateExistingRequests() {
 			`;
 		} else {
 			reimbursements = data;
-			let tableBody = $("#pending-body");
+			let tableBody = document.getElementById("pending-body");
 			for (i = 0; i < reimbursements.length; i++) {
 				let reimbursement = reimbursements[i];
 				id = reimbursement.reimb_id;
 				amt = reimbursement.amount;
 				desc = reimbursement.description;
-//				emp_id = reimbursement.emp_id;
-//				status = reimbursement.stat;
-//				resolver = reimbursement.reimb_resolver;
+				emp_id = reimbursement.employee_id.id;
+				status = reimbursement.stat;
+				resolver = reimbursement.reimb_resolver;
 				
-				reimb_array = {id, amt, desc};
-				
-				console.log(reimb_array);
+				reimbursement_arr = {id, amt, desc, emp_id, status, resolver};
+				console.log(reimbursement_arr);
 //				if (status == 1) {
 //					status = "pending";
 //				}
 					result += `
 			    			<tr scope = "row">
 			    			<td> ${id} </td>
-			    			<td> ${amt} </td>
 			    			<td> ${desc} </td>
+			    			<td> ${amt} </td>
+			    			<td> ${status} </td>
+			    			<td> ${resolver} </td>
 			    			</tr>
 			    	`;
+					console.log(result);
 //				 else {
 //					continue;
 //				}
@@ -109,4 +111,3 @@ function populateExistingRequests() {
 		}
 	});
 }
-	

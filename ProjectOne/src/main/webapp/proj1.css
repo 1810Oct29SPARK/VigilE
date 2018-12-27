@@ -17,3 +17,21 @@
 th {
 	text-align: center;
 }
+
+#display {
+	padding-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	text-align: center;
+	
+}
+
+#LoginForm {
+	margin: auto;
+	width: 50%;
+}
+
+form input {
+	width: 50%;
+}
